@@ -20,6 +20,7 @@ void dijkstra(int source)
     while (!pq.empty())
     {
         int u = pq.top().second;
+        visited[u] = true;
         pq.pop();
 
         for (pii vPair : arr[u])
